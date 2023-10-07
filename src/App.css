@@ -1,38 +1,77 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.head-text h1 {
   text-align: center;
+  color: aqua;
+  text-shadow: 2px 6px rgb(14, 13, 13);
+  font-style: italic;
+  font-weight: bolder;
+  margin-right: 220px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.head-text {
   display: flex;
-  flex-direction: column;
+  justify-content: right;
   align-items: center;
+  padding: 0;
+}
+#search {
+  padding: 5px;
+  border-radius: 5px;
+  border-color: aquamarine;
+}
+strong {
+  color: aquamarine;
+}
+
+/* Apply styles to the button */
+button[type="submit"] {
+  /* Your CSS properties here */
+  background-color: gray; /* Blue background color */
+  color: #fff; /* White text color */
+  padding: 5px 10px; /* Padding around the text */
+  border-radius: 5px; /* Remove the border */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Apply styles when the button is hovered over */
+button[type="submit"]:hover {
+  background-color: aquamarine; /* Darker blue background on hover */
+}
+.list-items {
+  padding: 5px;
+  margin-top: 20px;
+  margin-left: 40px;
+}
+li {
+  list-style-type: circle;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 20px;
+}
+span {
+  margin-left: 15px;
+  justify-content: space-between;
+}
+button[type="button"] {
+  /* Your CSS properties here */
+  background-color: gray; /* Blue background color */
+  color: #fff; /* White text color */
+  padding: 5px 10px; /* Padding around the text */
+  border-radius: 5px; /* Remove the border */
+  cursor: pointer; /* Change cursor to pointer on hover */
 }
 
-.App-link {
-  color: #61dafb;
+/* Apply styles when the button is hovered over */
+button[type="button"]:hover {
+  background-color: rgb(255, 127, 138); /* Darker blue background on hover */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a:hover {
+  color: aquamarine;
+}
+a:active {
+  color: brown;
 }
